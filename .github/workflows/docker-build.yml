@@ -1,9 +1,9 @@
 name: docker image build and push 
-on: [push]
+on: push
 jobs: 
  Dockher-Build-Push: 
   runs-on: ubuntu-latest
-  step:
+  steps:
    - name: Check out repository code 
      uses: actions/checkout@v2 
    - name: docker image build 
