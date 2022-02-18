@@ -1,5 +1,5 @@
-name：Docker image build add push
-on: [push]
+name：Docker image build and push
+on:push
 jobs:
  Docker-Build-Push:
   runs-on: ubuntu-latest
