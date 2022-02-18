@@ -1,12 +1,13 @@
-name：Docker image build and push
-on:push
-jobs:
- Docker-Build-Push:
+name: docker image build and push 
+on: [push]
+jobs: 
+ Dockher-Build-Push: 
   runs-on: ubuntu-latest
-  steps:
-    - name: Check out repository code
-      uses: actions/checkout@v2
-    - name: docker image build
-      run: docker build -t hubxiaoyu/hello:latest .
-    - name: list docker image
-      run: docker image ls
+  step:
+   - name: Check out repository code 
+     uses: actions/checkout@v2 
+   - name: docker image build 
+     run: docker build -t hubxiaoyu/hello:latest .
+   - name: list docker image
+     run: docker image ls
+   
